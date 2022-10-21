@@ -245,19 +245,6 @@
     ],
     "description": "tf_cert"
   },
-  "purgeauth": {
-    "scope": "terraform",
-    "prefix": "purgeauth",
-    "body": [
-      "  snippet {",
-      "    content  = file(\"${path.module}/vcl/snippet_recv_purge_auth.vcl\")",
-      "    name     = \"recv_purge_auth\"",
-      "    type     = \"recv\"",
-      "    priority = 100",
-      "  }"
-    ],
-    "description": "purgeauth"
-  },
   "dictionary": {
     "scope": "terraform",
     "prefix": "dictionary",
